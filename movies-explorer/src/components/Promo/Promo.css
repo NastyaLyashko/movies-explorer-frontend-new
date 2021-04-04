@@ -1,0 +1,31 @@
+.promo {
+    background-color: rgba(243, 193, 248, 1);
+}
+
+.promo__container {
+    position: relative;
+    padding: 75px 70px;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.promo__logo {
+    position: absolute;
+    width: 310px;
+    height: 304px;
+    right: 70px;
+}
+
+.promo__title {
+    font-size: 50px;
+    line-height: 1.2;
+    max-width: 640px;
+}
+
+.promo__text {
+    max-width: 310px;
+    font-size: 13px;
+    line-height: 1.2;
+    opacity: 0.5;
+    margin: 36px 0px 156px;
+}
