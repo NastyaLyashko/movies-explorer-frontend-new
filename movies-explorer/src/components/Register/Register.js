@@ -6,8 +6,8 @@ function Register ({ name, email, password }) {
     return (
         <>
             <section className="form">
-                <Header disable='true'/>
-                <form className="form__container form__containe_type_register">
+                <Header disable={true} signIn={true} main={false}/>
+                <form className="form__container">
                     <h3 className="form__title">Добро пожаловать!</h3>
                     <label className="form__field">Имя
                     <input  value={name}
@@ -42,9 +42,9 @@ function Register ({ name, email, password }) {
                             maxLength="200"/>
                     <span className="form__error" id="password-error"></span>
                     </label>
-                    <button type="submit" className="form__save-button">Зарегистрироваться</button>
-                    <Link to="/signin" className="form__sing-in-text"><span className="form__sing-in-text_grey">Уже зарегистрированы? </span>Войти</Link> 
                 </form>
+                <Link to="/signup" className="form__button">Зарегистрироваться</Link>
+                <Link to="/signin" className="form__sing-in-text"><span className="form__sing-in-text_grey">Уже зарегистрированы? </span>Войти</Link> 
             </section>
         </>
     )

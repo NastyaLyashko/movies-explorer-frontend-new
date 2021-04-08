@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom';
 import './Login.css';
 import Header from '../Header/Header';
 
-function Login ({ name, email, password }) {
+function Login ({ email, password }) {
     return (
         <>
             <section className="form">
-                <Header disable='true'/>
+                <Header disable={true} signIn={true} main={false}/>
                 <form className="form__container form__containe_type_register">
                     <h3 className="form__title">Рады видеть!</h3>
                     <label className="form__field">Email
@@ -31,9 +31,9 @@ function Login ({ name, email, password }) {
                             maxLength="200"/>
                     <span className="form__error" id="password-error"></span>
                     </label>
-                    <button type="submit" className="form__save-button">Войти</button>
-                    <Link to="/signup" className="form__sing-in-text"><span className="form__sing-in-text_grey">Ещё не зарегистрированы? </span>Регистрация</Link> 
                 </form>
+                <Link to="/signin" className="form__button">Войти</Link>
+                <Link to="/signup" className="form__sing-in-text"><span className="form__sing-in-text_grey">Ещё не зарегистрированы? </span>Регистрация</Link> 
             </section>
         </>
     )

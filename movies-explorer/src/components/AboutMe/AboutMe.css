@@ -6,12 +6,20 @@
 }
 
 .about-me__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 66px;
+}
+
+.about-me__info {
     max-width: 600px;
 }
 
 .about-me__title {
     font-size: 22px;
     line-height: 1.2;
+    font-weight: 400;
     margin: 0px;
     letter-spacing: -0.04em;
     height: 49px;
@@ -19,19 +27,18 @@
 }
 
 .about-me__portret {
-    position: absolute;
     width: 270px;
     height: 327px;
     right: 70px;
     border-radius: 10px;
-    margin-top: 66px;
 }
 
 .about-me__subtitle {
     font-size: 50px;
     line-height: 1.1;
+    font-weight: 400;
     letter-spacing: -0.04em;
-    margin: 66px auto 18px;
+    margin: 0px auto 18px;
 }
 
 .about-me__about {
@@ -44,7 +51,7 @@
 .about-me__text {
     font-size: 14px;
     line-height: 1.6;
-    margin: 26px 0px 100px;
+    margin: 0px 0px 100px;
 }
 
 .about-me__connect-links{
@@ -61,4 +68,71 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
+}
+
+@media (max-width:1100px) {
+    .about-me {
+        padding: 90px 50px;
+    }
+
+    .about-me__subtitle {
+        font-size: 40px;
+    }
+
+    .about-me__about {
+        font-size: 12px;
+        margin: 16px 0px 20px;
+    }
+
+    .about-me__text {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 87px;
+    }
+
+    .about-me__portret {
+        width: 255px;
+        height: 307px;
+        margin-left: 49px;
+    }
+}
+
+@media (max-width:510px) {
+    .about-me {
+        padding: 70px 14px;
+    }
+
+    .about-me__container {
+        margin-top: 60px;
+        flex-direction: column;
+    }
+
+    .about-me__portret {
+        position: relative;
+        margin: 0px auto 40px;
+        right: 0px;
+        width: 292px;
+        height: 352px;
+    }
+
+    .about-me__subtitle {
+        font-size: 30px;
+        line-height: 1.1;
+        margin: 0px auto;
+    }
+
+    .about-me__about {
+        font-size: 11px;
+        margin: 20px 0px;
+    }
+
+    .about-me__text {
+        font-size: 11px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+
+    .about-me__connect-links {
+        gap: 26px;
+    }
 }

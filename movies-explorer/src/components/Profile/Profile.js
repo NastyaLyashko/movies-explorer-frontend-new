@@ -5,7 +5,7 @@ import Header from '../Header/Header';
 function Profile ({ userName, email }) {
     return (
         <>
-            <Header />
+            <Header  disable={false} signIn={true} main={false}/>
             <section className='profile'>
                 <h2 className='profile__title'>Привет, {userName}!</h2>
                 <form className='profile__form'>

@@ -7,10 +7,10 @@ import Footer from '../Footer/Footer';
 function SavedMovies () {
     return (
         <>
-            <Header />
+            <Header disable={false}  signIn={true}/>
             <section className='movies'>
                 <SearchForm />
-                <MoviesCardList movieSaved='true'/>
+                <MoviesCardList movieSaved={true} />
             </section>
             <Footer />
         </>

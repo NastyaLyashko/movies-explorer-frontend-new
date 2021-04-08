@@ -12,7 +12,7 @@ function SearchForm () {
                         <button type='submit' className='search__submit-button'>Найти</button>
                     </label>
                     <div className='search__container search__container_checkbox'>
-                        <label for="checkbox" class="search__switch">
+                        <label htmlFor="checkbox" className="search__switch">
                             <input type="checkbox" id="checkbox" className='search__checkbox'/>
                             <span className="search__slider"></span>
                         </label>
