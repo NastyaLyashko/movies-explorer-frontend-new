@@ -27,7 +27,6 @@
 }
 
 .footer__links {
-    list-style-type: none;
     display: flex;
     margin: 20px 0px;
     padding: 0px;
@@ -70,7 +69,7 @@
         margin: 0px 0px 12px;
     }
 
-    .footer__link:last-child {
+    .footer__link:last-of-type{
         margin-bottom: 0px;
     }
 

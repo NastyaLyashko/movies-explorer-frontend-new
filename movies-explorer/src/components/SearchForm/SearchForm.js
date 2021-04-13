@@ -8,12 +8,13 @@ function SearchForm () {
                     <label className='search__container'>
                         <input className='search__input'
                             placeholder="       Фильм"
-                            type="text" />
+                            type="text"
+                            required />
                         <button type='submit' className='search__submit-button'>Найти</button>
                     </label>
                     <div className='search__container search__container_checkbox'>
                         <label htmlFor="checkbox" className="search__switch">
-                            <input type="checkbox" id="checkbox" className='search__checkbox' required/>
+                            <input type="checkbox" id="checkbox" className='search__checkbox'/>
                             <span className="search__slider"></span>
                         </label>
                         <p className='search__text'>Короткометражки</p>

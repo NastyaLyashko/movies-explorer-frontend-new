@@ -31,6 +31,10 @@
     color: #A0A0A0;
 }
 
+.search__input:focus {
+  outline: 1px dashed #FF4062;
+}
+
 .search__submit-button {
     width: 70px;
     height: 44px;
@@ -43,6 +47,12 @@
     background: #000000;
     border-radius: 3px;
     border: none;
+    transition: opacity 1s linear;
+}
+
+.search__submit-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .search__text {

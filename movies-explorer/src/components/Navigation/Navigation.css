@@ -106,7 +106,6 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        padding: 18px 30px;
         align-items: flex-end;
     }
 
@@ -114,9 +113,8 @@
         display: block;
         position: relative;
         width: 28px;
-        height: 20px;
+        height: 23px;
         z-index: 6;
-        right: 0px;
     }
 
     .navigation__burger::before,
@@ -125,7 +123,7 @@
         background-color: #000000;
         position: absolute;
         width: 100%;
-        height: 2px;
+        height: 3px;
         left: 0px;
     }
 
@@ -140,20 +138,24 @@
     .navigation__burger_span {
         position: absolute;
         background-color: #000000;
-        height: 2px;
+        height: 3px;
         left: 0px;
-        top: 9px;
+        top: 10px;
         width: 100%;
+    }
+
+    .navigation__burger_active{
+        margin: 29px 29px 0px 0px;
     }
 
     .navigation__burger_active::before {
         transform: rotate(45deg);
-        top: 9px;
+        top: 10px;
     }
 
     .navigation__burger_active::after {
         transform: rotate(-45deg);
-        bottom: 9px;
+        bottom: 10px;
     }
 
     .navigation__burger_span_active {
@@ -206,10 +208,6 @@
         font-size: 10px;
     }
 
-    .navigation__links-container {
-        padding: 18px 14px;
-    }
-
     .navigation__link_active {
         height: 29px;
         font-weight: 500;
@@ -218,20 +216,37 @@
         margin-bottom: 15px;
     }
 
+    .navigation__link {
+        margin-bottom: 24px;
+    }
+
     .navigation__burger {
         width: 22px;
-        height: 18px;
+        height: 20.5px;
     }
 
     .navigation__burger_span {
-        top: 8px;
+        top: 9px;
+        height: 2.5px;
+    }
+
+    .navigation__burger::before,
+    .navigation__burger::after {
+
+        height: 2.5px;
+    }
+
+    .navigation__burger_active{
+        margin-right: 14px;
+        width: 31px;
+        height: 31px;
     }
 
     .navigation__burger_active::before {
-        top: 8px;
+        top: 14px;
     }
 
     .navigation__burger_active::after {
-        bottom: 8px;
+        bottom: 14px;
     }
 }

@@ -39,6 +39,10 @@
     box-shadow: none;
 }
 
+.card__button:focus {
+    outline: none;
+}
+
 .card__button_like {
     background: url(../../images/no-like.svg) no-repeat;
     background-position: 50%;
