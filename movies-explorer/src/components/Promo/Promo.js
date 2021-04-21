@@ -3,10 +3,10 @@ import Header from '../Header/Header';
 import NavTab from '../NavTab/NavTab';
 import logo from '../../images/landing-logo.png'
 
-function Promo () {
+function Promo ({ signIn }) {
     return (
         <section className='promo'>
-            <Header disable={true} signIn={false} main={true}/>
+            <Header disable={false} signIn={signIn} main={true}/>
             <div className='promo__container'>
                 <img src={logo} alt='logo' className='promo__logo'/>
                 <h1 className='promo__title'>Учебный проект студента факультета Веб-разработки.</h1>

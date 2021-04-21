@@ -17,7 +17,7 @@
     width: 410px;
     display: flex;
     flex-direction: column;
-    margin: 107px 0px 204px;
+    margin: 107px 0px 16px;
 }
 
 .profile__container {
@@ -25,26 +25,37 @@
     justify-content: space-between;
     align-items: baseline;
     border-bottom: 1px solid #E8E8E8;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1.2;
+    height: 30px;
+    margin-top: 16px;
 }
 
-.profile__container:last-child {
+.profile__container:last-of-type {
     border-bottom: none;
 }
 
 .profile__label {
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 1.2;
-    margin: 16px 0px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    max-width: 85%;
 }
 
 .profile__input {
     border: none;
     padding: 0px;
+    width: 90%;
+    height: 100%;
     text-align: right;
     font-size: 11px;
     line-height: 1.2;
-    margin: 16px 0px;
+    margin: 0px;
+}
+
+.profile__input:focus {
+    outline: none;
 }
 
 .profile__edit-button {
@@ -53,15 +64,43 @@
     background: none;
     font-size: 13px;
     line-height: 1.2;
-    margin-bottom: 16px;
+    margin: 204px auto 0px;
+}
+
+.profile__edit-button_active:hover {
+    cursor: pointer;
+}
+
+.profile__edit-button_active {
+    color: #000000;
+}
+
+.profile__edit-button_inactive {
+    color: #A0A0A0;
 }
 
 .profile__exit-button {
-    text-decoration: none;
+    padding: 0px;
     font-weight: 500;
     font-size: 13px;
     line-height: 1.2;
     color: #FF4062;
+    border: none;
+    background: none;
+}
+
+.profile__exit-button:hover {
+    cursor: pointer;
+}
+
+.profile__error {
+    color: #FF4062;
+}
+
+.profile__message {
+    font-size: 13px;
+    line-height: 1.2;
+    color: #A0A0A0;
 }
 
 @media (max-width:1100px) {
@@ -70,7 +109,11 @@
     }
 
     .profile__form {
-        margin: 80px 0px 194px;
+        margin: 80px 0px 16px;
+    }
+
+    .profile__edit-button {
+        margin-top: 194px;
     }
 }
 
@@ -92,5 +135,6 @@
     .profile__edit-button {
         position: fixed;
         bottom: 71px;
+        right: calc(50% - 49px);
     }
 }

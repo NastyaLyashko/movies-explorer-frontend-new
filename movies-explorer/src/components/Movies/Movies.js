@@ -4,13 +4,21 @@ import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import SearchForm from '../SearchForm/SearchForm';
 import Footer from '../Footer/Footer';
 
-function Movies () {
+function Movies ({ signIn, searchFilm, cards, handleLikeCard, handleDeleteCard, savedMovies, filteredMovies, onCheckbox, onAddMovies, numberOfMovies, isLoading }) {
+
     return (
         <>
-            <Header disable={false} signIn={true}/>
+            <Header disable={false} signIn={signIn} />
             <section className='movies'>
-                <SearchForm />
-                <MoviesCardList movieSaved={false}/>
+                <SearchForm searchFilm={searchFilm} cards={cards} onCheckbox={onCheckbox} />
+                <MoviesCardList movieSaved={false} 
+                                cards={filteredMovies}
+                                savedMovies={savedMovies}
+                                handleLikeCard={handleLikeCard}
+                                handleDeleteCard={handleDeleteCard}
+                                numberOfMovies={numberOfMovies}
+                                onAddMovies={onAddMovies}
+                                isLoading={isLoading} />
             </section>
             <Footer />
         </>

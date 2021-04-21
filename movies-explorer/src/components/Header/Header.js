@@ -10,7 +10,7 @@ function Header ({ disable, signIn, main }) {
             <NavLink exact to='/' className={`${disable ? "header__logo_sign" : ""} header__logo`}>
                 <img src={logo} alt='logo'/>
             </NavLink>
-            <Navigation disable={disable} signIn={signIn}/>
+            <Navigation main={main} signIn={signIn}/>
         </header>
     )
 }
