@@ -13,8 +13,6 @@ function MoviesCard ({ card, movieSaved, handleLikeCard, handleDeleteCard, saved
             return null;
         }
     }
-    
-
 
     const duration = () => {
         if (card.duration > 60) {

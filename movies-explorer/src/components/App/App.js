@@ -179,12 +179,13 @@ function App() {
   }
 
   const [savedMovies, setSavedMovies] = useState([]);
+  
 
   function handleGetSavedMovies() {
     api.getSavedMovies()
         .then((res) => {
           setSavedMovies(res.data);
-          setFilteredSavedMovies(res.data)
+          setFilteredSavedMovies(res.data);
         })
         .catch(err => {
             console.log(err);
@@ -206,6 +207,7 @@ function App() {
       api.postMovie(card)
       .then((newMovie) => {
           setSavedMovies([newMovie.data, ...savedMovies]);
+          setFilteredSavedMovies([newMovie.data, ...savedMovies]);
       })
       .catch(err => {
         console.log(err)
@@ -217,6 +219,7 @@ function App() {
     .then(() => {
         const newCards = savedMovies.filter((c) => c._id !== card._id);
         setSavedMovies(newCards);
+        setFilteredSavedMovies(newCards);
     })
     .catch(err => {
         console.log(err);

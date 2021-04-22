@@ -143,10 +143,6 @@ class Api {
             return Promise.reject(`Ошибка: ${res.status}`);
         })
     }
-
-    changeLikeMovieStatus(idMovie, isLiked) {
-        return !isLiked ? this.deleteMovie(idMovie) : this.postMovie(idMovie)
-    }
 }
 
 export const api = new Api({
