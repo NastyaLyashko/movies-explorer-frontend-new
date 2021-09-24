@@ -8,4 +8,4 @@
 Бэк: https://github.com/NastyaLyashko/movies-explorer-api
 
 ##  Ссылка на сайт:
-https://lyashko-movies-explorer.students.nomoredomains.icu/
+https://lyashko-movies-explorer.nomoredomains.club
